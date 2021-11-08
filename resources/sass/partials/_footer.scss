@@ -1,0 +1,81 @@
+footer {
+    .top {
+        background-image: url(../images/footer-bg.jpg);
+        background-size: cover;
+
+        .container {
+            background-image: url(../images/dc-logo-bg.png);
+            background-size: auto;
+            background-position: right;
+            background-repeat: no-repeat;
+            padding-block: 2rem;
+
+            .list_container {
+                display: flex;
+    
+                ul {
+                    list-style: none;
+                    margin-right: 1.5rem;
+    
+                    li {
+                        color: #959595;
+    
+                        &:last-child {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    
+                    li h4 {
+                        text-transform: uppercase;
+                        color: #fff;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            p {
+                color: #959595;
+                width: 50%;
+
+                a {
+                    text-decoration: none;
+                    color: $dc-blue;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        background-color: #303030;
+        padding-block: 1rem;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                color: #fff;
+                background-color: transparent;
+                padding: 0.8rem;
+                text-transform: uppercase;
+                border: 2px solid $dc-blue;
+                font-weight: bold;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+
+                li:not(:last-child) {
+                    margin-right: 1rem;
+                }
+
+                h4 {
+                    color: $dc-blue;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
